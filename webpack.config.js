@@ -1,9 +1,13 @@
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: "./src/index.js",
   output: {
-    path: __dirname,
-    publicPath: '/',
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
+    filename: 'build.js'
   },
   module: {
     loaders: [
@@ -14,6 +18,22 @@ module.exports = {
           presets: ['react', 'es2015', 'stage-1']
         }
       }
+    ],
+    rules: [
+      {
+        test: /\.html$/,
+        loader: 'html'
+      },
+      { test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loaders: [
+          'babel-loader',
+          'eslint-loader'
+        ]
+      },
+      { test: /\.json$/,
+        loader: 'json-loader'
+      },
     ]
   },
   resolve: {
@@ -27,4 +47,11 @@ module.exports = {
       poll: 1000
     }
   }
+  /*plugins: [
+    new HtmlWebpackPlugin({
+      template: `${__dirname}/index.html`,
+      filename: 'index.html',
+      inject: 'body',
+    })
+  ]*/
 };
