@@ -40,3 +40,27 @@
     background: black;
     color: white;
 }
+
+.project-list table tr td:nth-child(2) {
+    width: 300px;
+}
+
+.project-list table tr td:nth-child(1) {
+    width: 70px;
+}
+
+.project-list table tr td:nth-child(3) {
+    width: 530px;
+}
+
+.project-list h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+    color: #838282;
+    margin: 15px 0;
+    font-weight: 200;
+}
+
+.project-list table tr td {
+    color: #838282;
+}
