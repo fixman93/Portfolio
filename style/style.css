@@ -1,0 +1,42 @@
+.header-inner {
+    position: relative;
+    height: 100vh;
+}
+
+.header-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-inner .header-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.header-inner .header-content h2 {
+    font-size: 40px;
+}
+
+.header-inner .header-content a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    font-size: 23px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all .4s;
+}
+
+.header-inner .header-content a:hover {
+    background: black;
+    color: white;
+}
