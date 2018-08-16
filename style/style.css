@@ -64,3 +64,19 @@
 .project-list table tr td {
     color: #838282;
 }
+
+.popup {
+    position: fixed;
+    top: 20%;
+    background: white;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #b9420a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup h3 {
+    font-size: 14px;
+    margin-top: 10px;
+}

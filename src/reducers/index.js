@@ -8,6 +8,7 @@ import ProjectsReducer5 from './reducer-projects5'
 import ProjectsReducer6 from './reducer-projects6'
 import ProjectsReducer7 from './reducer-projects7'
 import ProjectsReducer8 from './reducer-projects8'
+import ActiveProject from './reducer-active-project'
 
 
 const rootReducer = combineReducers({
@@ -19,7 +20,8 @@ const rootReducer = combineReducers({
   projects5: ProjectsReducer5,
   projects6: ProjectsReducer6,
   projects7: ProjectsReducer7,
-  projects8: ProjectsReducer8
+  projects8: ProjectsReducer8,
+  activeBook: ActiveProject
 });
 
 export default rootReducer;
