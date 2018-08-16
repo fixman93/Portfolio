@@ -102,12 +102,12 @@ class Projects extends Component {
   render() {
     return (
       <div className="container project-list">
-        <h2>FREELANCE (2017)</h2>
+        <h2>FREELANCE (2018)</h2>
         <table className="table table-hover">
           <thead>
             <tr>
               <th>#</th>
-              <th>Project Name (Link)</th>
+              <th>Project Name (Link) </th>
               <th>Technologies</th>
               <th>Individual/Team</th>
             </tr>
