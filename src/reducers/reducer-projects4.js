@@ -4,7 +4,7 @@ export default () => {
       number: '1.',
       title: 'TriFit',
       skills: 'Wordpress',
-      url: '',
+      url: 'https://trifitla.com/',
       status: 'Individual'
     }
   ]

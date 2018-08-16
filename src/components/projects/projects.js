@@ -8,7 +8,7 @@ class Projects extends Component {
       return (
         <tr key={project.title}>
           <td>{project.number}</td>
-          <td>{project.title}</td>
+          <td><a href={project.url} target="_blank">{project.title}</a></td>
           <td>{project.skills}</td>
           <td>{project.status}</td>
         </tr>
@@ -20,7 +20,7 @@ class Projects extends Component {
       return (
         <tr key={project2.title}>
           <td>{project2.number}</td>
-          <td>{project2.title}</td>
+          <td><a href={project2.url} target="_blank">{project2.title}</a></td>
           <td>{project2.skills}</td>
           <td>{project2.status}</td>
         </tr>
@@ -32,7 +32,7 @@ class Projects extends Component {
       return (
         <tr key={project.title}>
           <td>{project.number}</td>
-          <td>{project.title}</td>
+          <td><a href={project.url} target="_blank">{project.title}</a></td>
           <td>{project.skills}</td>
           <td>{project.status}</td>
         </tr>
@@ -44,7 +44,7 @@ class Projects extends Component {
       return (
         <tr key={project.title}>
           <td>{project.number}</td>
-          <td>{project.title}</td>
+          <td><a href={project.url} target="_blank">{project.title}</a></td>
           <td>{project.skills}</td>
           <td>{project.status}</td>
         </tr>
@@ -56,7 +56,7 @@ class Projects extends Component {
       return (
         <tr key={project.title}>
           <td>{project.number}</td>
-          <td>{project.title}</td>
+          <td><a href={project.url} target="_blank">{project.title}</a></td>
           <td>{project.skills}</td>
           <td>{project.status}</td>
         </tr>
@@ -68,7 +68,7 @@ class Projects extends Component {
       return (
         <tr key={project.title}>
           <td>{project.number}</td>
-          <td>{project.title}</td>
+          <td><a href={project.url} target="_blank">{project.title}</a></td>
           <td>{project.skills}</td>
           <td>{project.status}</td>
         </tr>
@@ -80,8 +80,8 @@ class Projects extends Component {
       return (
         <tr key={project.title}>
           <td>{project.number}</td>
-          <td>{project.title}</td>
-          <td>{project.skills}</td>
+          <td><a href={project.url} target="_blank">{project.title}</a></td>
+          <td>{project.skills}</td> 
           <td>{project.status}</td>
         </tr>
       )
@@ -92,7 +92,7 @@ class Projects extends Component {
       return (
         <tr key={project.title}>
           <td>{project.number}</td>
-          <td>{project.title}</td>
+          <td><a href={project.url} target="_blank">{project.title}</a></td>
           <td>{project.skills}</td>
           <td>{project.status}</td>
         </tr>
