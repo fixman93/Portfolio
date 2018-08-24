@@ -21,7 +21,7 @@ class Header extends Component {
           <img src="http://civcic.com/assets/images/header-bg.jpg" alt="img" />
             <div className="header-content">
             {this.renderList()}
-            <a className="knowmore-btn" href="https://www.upwork.com/freelancers/~01f507600be26cc2a3" target="_blank">UpWork profile</a><br />
+            <a className="knowmore-btn" href="https://www.upwork.com/freelancers/~01f507600be26cc2a3" target="_blank">Upwork profile</a><br />
             <a className="knowmore-btn" href="https://www.linkedin.com/in/boris-civcic-37244378/" target="_blank">Linkedin</a><br />
             <a className="knowmore-btn" href="https://github.com/fixman93" target="_blank">GitHub</a>
           </div>
