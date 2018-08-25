@@ -110,3 +110,53 @@ section.AboutMe h1 {
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
+
+.blogPosts {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0px auto;
+    /* background: #e8e8e8; */
+    /* border-radius: 5px; */
+    /* border: 1px solid #ada9a9; */
+    padding: 40px 0;
+}
+
+.blogPosts .blogBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.blogPosts .blogBox img {
+    max-width: 70%;
+    border-radius: 20px;
+    width: 100%;
+}
+
+section.Blog {
+    background: #e8e8e8;
+}
+
+.blogPosts .blogBox .date {
+    width: 80px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blogPosts .blogBox .image {
+    width: calc(50% - 80px);
+    padding: 0 15px;
+    text-align: center;
+}
+
+.blogPosts .blogBox .description {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.blogPosts .blogBox .description h2 {
+    font-size: 22px;
+}
