@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-
+ 
 class AboutMe extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+            <section className="AboutMe">
+                <h1>My Stories</h1>
+            </section>
         )
     }
 }

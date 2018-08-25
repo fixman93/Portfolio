@@ -80,3 +80,33 @@
     font-size: 14px;
     margin-top: 10px;
 }
+
+.AboutMe {
+    background: url(../src/assets/images/natural.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 370px;
+}
+
+.AboutMe:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.AboutMe h1 {
+    position: relative;
+    z-index: 9;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
