@@ -165,7 +165,7 @@ class Projects extends Component {
               {this.renderList5()}
             </tbody>
           </table>
-          <h2>DEGREE 361 (2014)</h2>
+          <h2>DEGREE 361 ( 2014 )</h2>
           <table className="table table-hover">
             <thead>
               <tr>
