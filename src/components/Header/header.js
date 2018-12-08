@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import * as actions from '../../store/actions/index';
 
 import './header.css'
 
@@ -28,14 +30,15 @@ class Header extends Component {
 
     register = (event) => {
         event.preventDefault()
+        this.props.onAuth( this.state.email, this.state.password, this.state.isSignup );
     }
   render() {
       let regBtn = ''
-      if (this.state.isSignup === true) {
-        regBtn = 'Login'
+      if (this.state.isSignup) {
+        regBtn = 'Register'
       }
       else {
-        regBtn = 'Register'
+        regBtn = 'Login'
       }
     return (
       <div>
@@ -46,7 +49,7 @@ class Header extends Component {
                     <input type="password" placeholder="password" name="password" onChange={this.handleChange} />
                     <button>{regBtn}</button>
                 </form>
-                <div onClick={this.switchAuthModeHandler} className="switch">Switch to {this.state.isSignup ? 'Register' : 'Login'}</div>
+                <div onClick={this.switchAuthModeHandler} className="switch">Switch to {this.state.isSignup ? 'Login' : 'Register'}</div>
             </div>
           <img src="http://civcic.com/assets/images/header-bg.jpg" alt="img" />
             <div className="header-content">
@@ -62,5 +65,10 @@ class Header extends Component {
 }
 
 
+const mapDispatchToProps = dispatch => {
+    return {
+        onAuth: ( email, password, isSignup) => dispatch( actions.auth(email, password, isSignup))
+    }
+}
 
-export default Header
+export default connect(null, mapDispatchToProps)(Header)
