@@ -1,0 +1,43 @@
+.login {
+    position: absolute;
+    right: 0;
+    width: 280px;
+    background: rgba(0, 0, 0, 0.61);
+    height: 100%;
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+}
+
+.login input {
+    width: 100%;
+    display: block;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.login form button {
+    border: 0;
+    background: #ec743b;
+    color: white;
+    font-size: 20px;
+    padding: 4px 20px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.switch {
+    width: 100%;
+    background: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+}
