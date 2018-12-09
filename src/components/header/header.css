@@ -41,3 +41,19 @@
     margin-top: 40px;
     cursor: pointer;
 }
+
+.loggedIn {
+    position: absolute;
+    right: 0;
+    width: 280px;
+    background: rgba(0, 0, 0, 0.61);
+    height: 100%;
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+}
+
+.loggedIn p {
+    margin: 0;
+    color: white;
+    word-break: break-word;
+}

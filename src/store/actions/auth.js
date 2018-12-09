@@ -7,11 +7,12 @@ export const authStart = () => {
     }
 }
 
-export const authSuccess = (token, userId) => {
+export const authSuccess = (token, userId, expiresIn) => {
     return {
         type: actionTypes.AUTH_SUCCESS,
         idToken: token,
-        userId: userId
+        userId: userId,
+        expiresIn: expiresIn
     }
 }
 
@@ -36,14 +37,14 @@ export const auth = (email, password, isSignup) => {
         if (!isSignup) {
             url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC5nW8-XOJADEvU7Mi7sgmhUNhHfRxXNQI';
         }
-        axios.post(url, authData)
-            .then(response => {
-                console.log(response);
-                dispatch(authSuccess(response.data.idToken, response.data.localId));
-                // dispatch(checkAuthTime(response.data.expiresIn));
-            })
-            .catch(err => {
-                dispatch(authFail(err.response.data.error));
-            });
+        return axios.post(url, authData)
+        .then(response => {
+            console.log(response);
+            dispatch(authSuccess(response.data.idToken, response.data.localId, response.data.expiresIn));
+            // dispatch(checkAuthTime(response.data.expiresIn));
+        })
+        .catch(err => {
+            dispatch(authFail(err.response.data.error));
+        })
     };
 };
