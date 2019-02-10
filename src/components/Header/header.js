@@ -25,6 +25,7 @@ class Header extends Component {
             expiresIn: ''
         }
         this.handleChange = this.handleChange.bind(this);
+        this.logout = this.logout.bind(this)
     }
     
     handleChange (evt) {
@@ -52,6 +53,12 @@ class Header extends Component {
            localStorage.setItem('userId', this.state.userId);
          });
       }
+    logout = (event) => {
+        event.preventDefault()
+        localStorage.setItem('token', '');
+        localStorage.setItem('userId', '');
+        this.setState({token: ''})
+    }
     render() {
         console.log(this.state)
       let regBtn = ''
@@ -63,7 +70,7 @@ class Header extends Component {
       }
 
     let login = null
-    if(!this.state.token) {
+    if(!this.state.token || this.state.token === '') {
         login = (
             <div className="login">
                 <form onSubmit={this.register}>
@@ -79,17 +86,20 @@ class Header extends Component {
         login = (
             <div className="loggedIn">
                 <p>Hello: {this.state.userId}</p>
-                <button>Logout</button>
+                <button onClick={this.logout} className="btn">Logout</button>
             </div>
         )
     }
     if(this.props.loading) {
-        login = <div>Loading...</div>
+        login = (
+            <div className="loaders">
+                <div className="loader-tadpole"></div>
+            </div>
+        )
     }
     return (
       <div>
         <div className="header-inner">
-            {this.props.tokenId}
             {login}
           <img src="http://civcic.com/assets/images/header-bg.jpg" alt="img" />
             <div className="header-content">
