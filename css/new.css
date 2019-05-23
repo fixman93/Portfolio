@@ -1,0 +1,8 @@
+.about_area .about_img {
+  right: 0;
+}
+
+.about_area .about_img img {
+  max-width: 100%;
+  border-radius: 20px;
+}
