@@ -6,3 +6,86 @@
   max-width: 100%;
   border-radius: 20px;
 }
+
+.mySkills {
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  position: fixed;
+  z-index: 1000000;
+  padding: 40px 50px;
+  /* overflow: auto; */
+}
+
+.mySkills .allSkills {
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+  overflow: scroll;
+  height: calc(100vh - 106px);
+}
+
+.mySkills .allSkills .box {
+  width: 100%;
+}
+
+.mySkills .allSkills .box ul {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.mySkills .allSkills .box ul li {
+  background: white;
+  border-radius: 25px;
+  padding: 9px 34px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.mySkills .allSkills .box h3 {
+  color: white;
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.mySkills .allSkills .box {
+  margin-top: 40px;
+}
+
+.mySkills h2 {
+  color: white;
+  font-weight: normal;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.closeSkills {
+  background: white;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 28px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.showSkills {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background: black;
+  color: white;
+  border-radius: 25px;
+  padding: 5px 30px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  z-index: 1000000;
+}

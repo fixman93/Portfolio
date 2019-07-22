@@ -33,7 +33,96 @@
 </head>
 
 <body>
-
+	<div class="showSkills">Show Skills</div>
+	<div class="mySkills">
+		<div class="closeSkills">x</div>
+		<h2>All my skills from the past</h2>
+		<div class="allSkills">
+			<div class="box">
+				<h3>Front End:</h3>
+				<ul>
+					<li>HTML</li>
+					<li>HTML5</li>
+					<li>CSS</li>
+					<li>CSS3</li>
+					<li>Twitter Bootstrap 3/4</li>
+					<li>Foundation</li>
+					<li>Semantic UI</li>
+					<li>CSS Animations</li>
+					<li>Canvas</li>
+					<li>Responsive Design(Media Query)</li>
+					<li>Cross-Browser optimization</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+					<li>Ajax</li>
+					<li>Angular (1.x)</li>
+					<li>Vue.js(small project)</li>
+					<li>React.JS(16+)</li>
+					<li>Jest</li>
+					<li>Enzyme</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3>CMS</h3>
+				<ul>
+					<li>Wordpress</li>
+					<li>Shopify</li>
+					<li>Joomla</li>
+					<li>SMF Forums</li>
+					<li>Vbulletin Forums</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3>CI/CD</h3>
+				<ul>
+					<li>GitHub</li>
+					<li>GitLab</li>
+					<li>TortoiseSVN</li>
+					<li>Heroku Pipelines</li>
+					<li>Netlify</li>
+					<li>Travis</li>
+					<li>Unit Tests</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3>Servers</h3>
+				<ul>
+					<li>AWS</li>
+					<li>S3</li>
+					<li>Cloud</li>
+					<li>VPS Server Hosting (Hostgator)</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3>Other</h3>
+				<ul>
+					<li>Jira</li>
+					<li>ActiveCollab</li>
+					<li>Assembla</li>
+					<li>Basecamp</li>
+					<li>Stash</li>
+					<li>Slack</li>
+					<li>Skype</li>
+					<li>Hangout</li>
+					<li>BrowserStack</li>
+					<li>Mac OS(I love it)</li>
+					<li>Windows(I hate it)</li>
+					<li>Notepad++</li>
+					<li>Sublime</li>
+					<li>Atom</li>
+					<li>Coda</li>
+					<li>Visual Studio Code</li>
+					<li>MAMP PRO</li>
+					<li>WAMP(Windows)</li>
+					<li>XAMP</li>
+					<li>Docker</li>
+					<li>Photoshop</li>
+					<li>Adobe Ilustrator</li>
+					<li>Postman</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<!--================ Start Header Area =================-->
 	<header class="header_area">
 		<div class="main_menu">
@@ -638,6 +727,15 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+
+	<script>
+		$('.closeSkills').click(function () {
+			$('.mySkills').css('display', 'none');
+		});
+		$('.showSkills').click(function () {
+			$('.mySkills').css('display', 'block');
+		});
+	</script>
 </body>
 
 </html>
